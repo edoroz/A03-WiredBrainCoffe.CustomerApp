@@ -24,14 +24,5 @@ namespace A03_WiredBrainCoffe.CustomerApp
         {
             InitializeComponent();
         }
-
-        private void ButtonMoveNavigation_Click(object sender, RoutedEventArgs e)
-        {
-            var column = (int)CustomerListGrid.GetValue(Grid.ColumnProperty);
-            var newColumn = column == 0 
-                ? 2 
-                : 0;
-            CustomerListGrid.SetValue(Grid.ColumnProperty, newColumn);
-        }
     }
 }
